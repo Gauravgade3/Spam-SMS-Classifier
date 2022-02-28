@@ -1,0 +1,11 @@
+Flask==2.0.1
+Flask-Cors==3.0.10
+joblib==1.0.1
+scikit-learn==1.0.2
+pickle==1.0.2
+pandas==1.4.0
+matplotlib==3.5.1
+seaborn==0.11.2
+numpy==1.22.1
+nltk==3.6.7
+wordcloud==1.8.1
