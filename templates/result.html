@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+    <h1>
+        Spam SMS Classifier
+    </h1>
+    <div class="container">
+        <form action="{{ url_for('predict')}}" method="POST">
+            <h2 class='container-heading' style="margin: 10%;"><span class="heading_font"></span></h2>
+            <br>
+            <br>
+            <br>
+
+            <!-- Result -->
+            <div style="color: rgba(236, 15, 15, 0.993);" class="results">
+                <h2> {{prediction_text}}</h2>
+            </div>
+
+        </form>
+
+    </div>
+    <br>
+    <br>
+
+    <footer>
+        <a href="https://www.linkedin.com/in/gauravgade3/" target="_blank"><i class="fa fa-linkedin" style="color: darkblue;"></i></a>
+        <a href="https://github.com/Gauravgade3" target="_blank"><i class="fa fa-github" style="color: black;"></i></a>
+        <br>
+        <br>
+        <small class="copyright text-muted">Copyright@: Gaurav Gade - 2022</small>
+    </footer>
+
+    <style>
+        body{
+             background-image:url("https://cdn.pixabay.com/photo/2017/09/28/08/31/letters-2794672__340.jpg");
+             background-position: center;
+             background-repeat: no-repeat;
+             background-size: 70%;
+             height: 100%;
+        }
+
+        body{
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        h1{
+                    color: green;
+                    font-family: "Times New Roman", Times, serif;
+                    font-size: 90px;
+                    font-weight: bold;
+                    margin-top: 35px;
+                    margin-bottom: 65px;
+                    text-shadow: 2px 2px 4px black;
+
+        }
+
+        h2{         color: purple;
+                    font-family: "Times New Roman", Times, serif;
+                    font-size: 50px;
+                    font-weight: bold;
+                    margin-top: 40px;
+                    margin-bottom: 70px;
+        }
+
+        footer a {
+                  font-size: 40px;
+                  padding: 5px;
+
+        footer small {
+                      color: black;
+                      font-size: 50px;
+                      font-weight: bold;
+
+        }
+
+
+    </style>
+
+</body>
+
+</html>

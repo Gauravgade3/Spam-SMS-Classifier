@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+        integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+         crossorigin="anonymous">
+</head>
+
+<body>
+    <h1>
+        Spam SMS Classifier
+    </h1>
+
+    <h2>
+        Enter your msg here
+    </h2>
+
+
+
+
+    <div class="container mt-3">
+       <form action="\predict" method="post" class="my-3">
+            <div class="mb-3 mt-3">
+<!--                <label for="SMS">SMS:</label>-->
+                <textarea class="form-control" rows="8" cols="20" id="SMS" placeholder="Enter your SMS here.." name="text"></textarea>
+            </div>
+            <div class="col my-3">
+                <button type="Submit" class="btn btn-primary">Classify</button>
+            </div>
+       </form>
+        <br>
+        <br>
+    </div>
+    <footer>
+        <a href="https://www.linkedin.com/in/gaurav-gade-bba1111b3/" target="_blank"><i class="fa fa-linkedin" style="color: darkblue;"></i></a>
+        <a href="https://github.com/Gauravgade3" target="_blank"><i class="fa fa-github" style="color: black;"></i></a>
+        <br>
+        <br>
+        <small class="copyright text-muted">Copyright@: Gaurav Gade - 2022</small>
+    </footer>
+
+
+
+
+
+<style>
+
+body {
+    background-image: url('https://cdn.pixabay.com/photo/2021/06/28/04/53/email-6370595__480.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+h1 {
+    font-style: oblique;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 90px;
+    color: red;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px green;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    color: white;
+    font-weight: normal;
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    margin-left: -160px;
+}
+
+
+
+
+
+
+
+</style>
+</body>
+</html>
+
+
+
